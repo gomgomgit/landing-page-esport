@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Style*/
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+.navbar {
+	background: #292533;
+	padding: 35px 0px;
+	color: #fff;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu-left {
+	display: flex;
+	align-items: center;
+}
+.logo {
+	margin-right: 50px;
+}
+.logo img {
+	width: 35px;
+}
+.menu-item {
+	margin: 0px 15px;
+}
+.user-item {
+	margin: 0px 12px;
+}
+.nav-icon {
+  	transition: all 0.3s;
+  }
+.nav-icon:hover {
+	color: #D31C3E;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown-menu {
+	position: absolute;
+	z-index: 3;
+	top: 80px; right: 0px;
+	background: #292533;
+	padding: 20px 30px;
+	border-radius: 3px;
+	display: none;
+	transition: all 0.3s;
+}
+.dropdown-menu:before {
+	content: '';
+	position: absolute;
+	z-index: 3;
+	top: -60px; right: 0px;
+	height: 80px;
+	width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown-menu li {
+	line-height: 30px;
+}
+
+.banner {
+	padding: 170px 0px;
+	background: url('assets/yasuo-landing-page.jpeg');
+	background-size: 100%;
+	position: relative;
+}
+.banner-overlay {
+	background-color: #000;
+	opacity: 0.5;
+	position: absolute;
+	top: 0; bottom: 0; right: 0; left: 0;
+	z-index: 2;
+}
+.banner-content {
+	width: 70%;
+	position: relative;
+	z-index: 3;
+}
+.banner-title {
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 65px;
+	margin-bottom: 40px;
+}
+.banner-text {
+	color: #ccc;
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+.button-text {
+	position: relative;
+	z-index: 3;
+}
+.banner-button-red {
+	padding: 15px 20px;
+	background: #D31C3E;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 3px;
+	transform: skewX(-3deg);
+	display: inline-block;
+	position: relative;
+	transition: all 0.3s;
+}
+.banner-button-red:before {
+	content: '';
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	z-index: 2;
+	background: #fff;
+	width: 0%;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+.banner-button-red:hover {
+	color: #D31C3E;
+}
+.banner-button-red:hover:before {
+	width: 100%;
+}
+
+.banner-button-white {
+	padding: 15px 20px;
+	background: #fff;
+	color: #D31C3E;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 3px;
+	transform: skewX(-3deg);
+	display: inline-block;
+}
